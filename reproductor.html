@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="cancion">
+        <div class="barra">
+            <a href="lista.html"> <i class='bx bx-grid-small'></i></a>
+        </div>
+        <div class="portada">
+            <div class="foto1" id="foto1"></div>
+        </div>
+        <div class="reproduccion">
+            <h2 id="titulo">Título</h2>
+            <p id="artista">Artista</p>
+            <audio id="audio" src=""></audio>
+            <div class="progressBar" id="progressBar">
+                <div class="progress" id="progresss"></div>
+                <div class="duracion">
+                    <span id="tiempoActual">0:00</span>
+                    <span id="tiempoDuracion">0:00</span>
+                </div>
+            </div>
+            <div class="botones">
+                <i class='bx bx-shuffle' id="random"></i>
+                <i class='bx bx-first-page' id="prev"></i>
+                <i class='bx bx-play-circle' id="play"></i>
+                <i class='bx bx-last-page' id="next"></i>
+                <i class='bx bx-repeat' id="repeat"></i>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

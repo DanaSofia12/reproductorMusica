@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+html, body {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 430px;
+    min-height: 100vh;
+    background: url('../img/opcion.jpg');
+    background-size: cover;
+}
+
+/* Estilos generales del contenedor principal */
+.container-fluid.prin {
+    width: 100%;
+    height: 100vh; /* Altura completa de la pantalla */
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    -webkit-border-radius: 46px;
+    border-radius: 26px;
+    -webkit-box-shadow: 17px 17px 20px #550a0a, -17px -17px 20px #911212;
+    box-shadow: 17px 17px 20px #550a0a, -17px -17px 20px #911212;
+}
+
+/* Ajustes para la imagen principal */
+.imagen-prin {
+    width: 100%;
+    height: 63vh;
+    overflow: hidden;
+    position: relative;
+    top: -192px;
+    margin: 0 auto;
+
+}
+
+.imagen-prin img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+/* Ajustes para la sección de inicio */
+.inicio {
+    width: 80%;
+    max-width: 600px; /* Limitar el ancho máximo */
+    height: 42vh; /* Altura proporcional */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px; /* Ajusta el espacio desde el borde inferior */
+    text-align: center;
+}
+
+/* Ajustes para el título */
+.inicio h1 {
+    color: #fff;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    background: #000;
+    padding: 15px;
+    border-radius: 14px;
+    box-shadow: 9px -7px 4px 2px #5d0000bd;
+    position: relative;
+    top: -63px;
+}
+
+/* Ajustes para el enlace */
+.inicio a {
+    background: #850808;
+    text-decoration: none;
+    border-radius: 13px;
+    padding: 16px 48px;
+    color: #fff;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 33px;
+    margin-top: 20px;
+    box-shadow: inset 2px 2px 2px 0px rgba(167, 100, 100, 0.5), 7px 7px 20px 0px rgba(152, 69, 69, 0.1), 4px 4px 5px 0px rgba(141, 25, 25, 0.1);
+    outline: none;
+}
+
+/* ESTILOS DEL REPRODUCTOR DE MÚSICA */
+
+.cancion {
+    width: 100%;
+    background: url('../img/f-lista.jpg') no-repeat center center/cover;
+    height: 100vh; /* Altura completa de la pantalla */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    -webkit-border-radius: 46px;
+    border-radius: 26px;
+    -webkit-box-shadow: 17px 17px 20px #550a0a, -17px -17px 20px #911212;
+    box-shadow: 17px 17px 20px #550a0a, -17px -17px 20px #911212;
+}
+
+.cancion .portada {
+    width: 80%;
+    max-width: 600px; /* Limitar el ancho máximo */
+    height: 50vh; /* Altura proporcional */
+    text-align: center;
+    background: url('../img/Frame 1.png') no-repeat center center / cover;
+    padding: 10px;
+    box-shadow: 2px 2px 2px 2px #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cancion .portada .foto1 {
+    background: url('../img/album.png') no-repeat center center/cover;
+    width: 90%;
+    height: 90%;
+    border: 2px solid #000;
+    box-shadow: -1px 1px 2px 2px #121111;
+}
+
+.cancion .barra {
+    position: relative;
+    top: -13px;
+    right: 164px;
+}
+
+.cancion a {
+    color: #fff;
+    margin: 0;
+}
+
+.reproduccion {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    text-align: center; /* Centrar el texto */
+    color: #fff;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 600px; /* Limitar el ancho máximo */
+}
+
+.reproduccion h2 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.reproduccion p {
+    margin: 0;
+    font-size: 20px;
+}
+
+.reproduccion .progressBar {
+    background: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px auto; /* Centrar la barra de progreso */
+    width: 80%;
+    max-width: 600px; /* Limitar el ancho máximo */
+    height: 4px;
+}
+
+.reproduccion .progressBar .progress {
+    background: #850808;
+    border-radius: 5px;
+    width: 0;
+    height: 100%;
+    transition: width 0.1s linear;
+}
+
+.reproduccion .progressBar .duracion {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reproduccion .botones {
+    display: flex;
+    justify-content: center;
+    margin: 42px auto;/* Centrar los botones */
+}
+
+.reproduccion .botones .bx {
+    font-size: 50px;
+    margin: 0 15px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.cancion .bx-grid-small {
+    font-size: 63px;
+}
+
+
+/* ESTILOS LISTA */
+
+
+.navbar {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.navbar-brand {
+    color: #ffffff !important;
+    font-size: 30px;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    justify-content: space-between;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.navbar-toggler{
+    background-color: #ffffff;
+    padding: 2px;
+    margin: 1px;
+    margin-right: 31px;
+}
+
+.principal{
+    background: url(../img/f-lista.jpg) no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding: 0;
+    -webkit-border-radius: 46px;
+    border-radius: 26px;
+    -webkit-box-shadow: 17px 17px 20px #550a0a, -17px -17px 20px #911212;
+    box-shadow: 17px 17px 20px #550a0a, -17px -17px 20px #911212;
+    padding-bottom: 59px;
+}
+
+.carousel-section, .card-carousel-section {
+    margin-bottom: 30px;
+}
+
+.carousel-item .row {
+    justify-content: center;
+}
+
+.carousel-item .col-6 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    right: 20px;
+}
+
+.card-carousel-section .card {
+    width: 160px; 
+    height: auto;
+    margin: 10px -40px 10px -40px;
+    transition: transform 0.3s, box-shadow 0.3s;
+   
+}
+
+.card-carousel-section .card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-carousel-section .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.lista-section {
+
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    color: #ffffff;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.lista-musica {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-musica .cd {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.lista-musica .cd img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.lista-musica .cd span {
+    flex: 1;
+}
+
+.lista-musica .cd .icono {
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.icon-footer {
+    font-size: 1.5rem;
+    color: white;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.icon-footer:hover {
+    color: red;
+}
+.card-body{
+background-color: rgb(0, 0, 0);
+margin: 1px;
+padding: 2px;
+}
+
+.Texto{
+    color: #ffffff;
+    position: relative;
+    left: 25px;
+}
+
+.icon-container {
+    display: flex; 
+    gap: 10px; 
+    align-items: center; 
+    position: relative;
+    left: 80px;
+    bottom: 33px;
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+}
+
+.icon-container svg {
+    cursor: pointer; 
+    transition: color 0.3s; 
+}
+
+.icon-container  svg:hover {
+    color: red;
+}
+.card-title{
+    color: #ffffff;
+}
+
+/* Estilo para los botones cuando están activos */
+.bx.active {
+    color: #ff0000; /* Cambiar a rojo cuando está activo */
+    /* Puedes agregar más estilos aquí según tus preferencias */
+}
+
+.carruselCan{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.slick-prev{
+    width: 40px;
+    height: 40px;
+    font-size: 1px;
+    position: absolute;
+    right: 67px;
+    z-index: 99;
+    top: 95px;
+    left: 5px;
+    background-color: transparent;
+    background: url(../img/flecha_izq.png);
+    background-size: cover;
+    border: none;
+}
+
+.slick-next{
+    width: 40px;
+    height: 40px;
+    font-size: 1px;
+    position: absolute;
+    right: 67px;
+    z-index: 99;
+    top: 95px;
+    right: 5px;
+    background-color: transparent;
+    background: url(../img/flechaa_der.png);
+    background-size: cover;
+    border: none;
+}
+
+.draggable{
+    width: 90%;
+}
+
+
+
